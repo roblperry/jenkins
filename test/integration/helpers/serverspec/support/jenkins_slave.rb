@@ -155,7 +155,7 @@ module Serverspec
       end
 
       def try
-        Cyield
+        yield
       rescue NoMethodError
         nil
       end
