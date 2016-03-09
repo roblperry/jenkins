@@ -46,8 +46,8 @@ module Serverspec
         @xml = nil
       end
 
-      def try(&block)
-        block.call
+      def try
+        yeild
       rescue NoMethodError
         nil
       end
