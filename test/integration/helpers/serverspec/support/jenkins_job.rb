@@ -47,7 +47,7 @@ module Serverspec
       end
 
       def try
-        yeild
+        yield
       rescue NoMethodError
         nil
       end
